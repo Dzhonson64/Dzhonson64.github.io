@@ -1,0 +1,151 @@
+
+@media (max-width: 1199.98px) { 
+    .content .browser-images .img-browser-slider img:nth-child(1),  .content .browser-images .img-browser-slider img:nth-child(3){
+        width: 600px;
+    }
+    .content .browser-images .img-browser-slider img:nth-child(2){
+        width: 700px;
+        bottom: -24px;
+    }
+    .menu-items .menu, .menu-items .logo, .search{
+        display: none;
+    }
+    .content .projects .project .card:hover .link{
+        left:95px;
+    }
+    .content .projects .project .card:hover .lupa{
+        right:115px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    .content .cards .block-active::after{
+        display: none;
+    }
+    .content .browser-images .img-browser-slider img:nth-child(1),  .content .browser-images .img-browser-slider img:nth-child(3){
+        width: 400px;
+    }
+    .content .browser-images .img-browser-slider img:nth-child(2){
+        width: 500px;
+    }
+    .content .brand .block img{
+        display: block;
+        margin: 0 auto;
+    }
+    .content .projects .project .card:hover .link {
+        left: 115px;
+    }
+    .slider .slogan{
+        width: 450px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .content .browser-images .img-browser-slider img:nth-child(1),  .content .browser-images .img-browser-slider img:nth-child(3){
+        width: 300px;
+    }
+    .content .browser-images .img-browser-slider img:nth-child(2){
+        width: 400px;
+    }
+    .content .buffer-bar .block {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content .projects .categories .button{
+        margin-top: 10px; 
+    }
+    .content .service .serve::after{
+        display: none;
+    }
+    header .slider .right, header .slider .left {
+        display: none;
+    }
+    footer .bottom {
+        flex-direction: column;
+    }
+    .content .projects .project .card:hover .lupa {
+        right: 195px;
+    }
+    .content .projects .project .card:hover .link {
+        left: 185px;
+    }
+    .slogan h2{
+        display: none;
+    }
+
+}
+
+@media (max-width: 575.98px) { 
+    .content .browser-images .img-browser-slider img:nth-child(1),  .content .browser-images .img-browser-slider img:nth-child(3){
+        width: 250px;
+    }
+    .content .browser-images .img-browser-slider img:nth-child(2){
+        width: 350px;
+    }
+    footer h3{
+        text-align: center;
+    }
+    footer .logo {
+        display: flex;
+        justify-content: center;
+    }
+    .mobile img {
+        display: none;
+    }
+    .content .projects .project .card:hover .lupa {
+        right: 180px;
+    }
+    .content .projects .project .card:hover .link {
+        left: 170px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) { 
+
+}
+
+@media (min-width: 1199.98px) { 
+    
+}
+
+@media (min-width: 991.98px) { 
+    
+}
+
+@media (min-width: 767.98px) { 
+    
+}
+
+@media (min-width: 575.98px) { 
+
+}
+    
+ 
+
+
+
+
+
+
+
+
+
+
+
