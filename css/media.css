@@ -72,6 +72,12 @@
     .slogan h2{
         display: none;
     }
+    .content .video-bar video {
+        height: 100%;
+    }
+    .content .cards .moreRead{
+        margin-bottom: 50px;
+    }
 
 }
 
@@ -98,6 +104,7 @@
     .content .projects .project .card:hover .link {
         left: 170px;
     }
+    
 }
 
 
@@ -130,7 +137,9 @@
 }
 
 @media (min-width: 767.98px) { 
-    
+    .content .video-bar video {
+        width: 100%;
+    }
 }
 
 @media (min-width: 575.98px) { 

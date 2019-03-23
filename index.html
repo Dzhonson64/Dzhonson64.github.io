@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -105,11 +105,11 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="margin-center">
-                                            <img src="img/icon-cart.png" alt="">
+                                            <i class="fas fa-shopping-bag"></i>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
-                                        <img src="img/icon-search.png" alt="">
+                                        <i class="fas fa-search"></i>
                                     </div>
                                 </div>
                             </div>
@@ -120,63 +120,73 @@
         </div>
         </div>
     </menu>
+
     <header>
-        <div class="slider d-flex align-items-center justify-content-center">
-            <div class="right"><img src="img/left.png" alt=""></div>
-            <div class="left"><img src="img/right.png" alt=""></div>
-            <div class="pointer d-flex">
-                <div class="circle"><img src="img/circle-slider.png" alt=""></div>
-                <div class="circle"><img src="img/circle-slider-active.png" alt=""></div>
-                <div class="circle"><img src="img/circle-slider.png" alt=""></div>
-                <div class="circle"><img src="img/circle-slider.png" alt=""></div>
-                <div class="circle"><img src="img/circle-slider.png" alt=""></div>
-            </div>
-            <div class="container  d-flex justify-content-center">
-                <div class="slogan">
-                    <h2>Unique and Modern Design</h2>
-                    <h1>Portfolio PSD Template</h1>
-                    <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                        placerat facer possim assum.</p>
-                    <div class="get-start">GET STARTED</div>
+        <div class="overlay">
+            <div class="slider d-flex align-items-center justify-content-center">
+                <div class="right"><i class="fas fa-chevron-left"></i></div>
+                <div class="left"><i class="fas fa-chevron-right"></i></div>
+                <div class="pointer d-flex">
+                </div>
+                <div class="container  d-flex justify-content-center">
+                    <div class="slogan">
+                        <h2>Unique and Modern Design</h2>
+                        <h1>Portfolio PSD Template</h1>
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                            placerat facer possim assum.</p>
+                        <div class="get-start">GET STARTED</div>
+                    </div>
                 </div>
             </div>
-
         </div>
     </header>
+
     <div class="content">
         <div class="cards">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-sm-6">
                         <div class="block">
-                            <img src="img/pen.png" alt="">
+                            <i class="fas fa-pencil-alt"></i>
                             <h3>Web & App Design</h3>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                            <p class="p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                                id quod
                                 mazim.</p>
+                            <div class="moreRead">more read</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
-                        <div class="block-active">
-                            <img src="img/stack.png" alt="">
+                        <div class="block">
+                            <i class="fab fa-stack-overflow"></i>
                             <h3>Development</h3>
-                            <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                            <p class="p">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut
+                                laoreet.Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut
+                                laoreet.Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod
+                                tincidunt ut
                                 laoreet.</p>
+                            <div class="moreRead">more read</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="block">
-                            <img src="img/setting.png" alt="">
+                            <i class="fas fa-cog"></i>
                             <h3>Customization</h3>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                            <p class="p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                                id quod
                                 mazim.</p>
+                            <div class="moreRead">more read</div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6">
                         <div class="block">
-                            <img src="img/folder.png" alt="">
+                            <i class="fas fa-folder-open"></i>
                             <h3>Marketing</h3>
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+                            <p class="p">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming
+                                id quod
                                 mazim.</p>
+                            <div class="moreRead">more read</div>
                         </div>
                     </div>
                 </div>
@@ -232,45 +242,44 @@
                     </p>
                 </div>
                 <div class="categories">
-                    <div class="button active">ALL</div>
-                    <div class="button">Web Design</div>
-                    <div class="button">Mobile App</div>
-                    <div class="button">Illustration</div>
-                    <div class="button">Photography</div>
+                    <div class="button active" name="all">ALL</div>
+                    <div class="button" name="webDesign">Web Design</div>
+                    <div class="button" name="mobileApp">Mobile App</div>
+                    <div class="button" name="illustration">Illustration</div>
+                    <div class="button" name="photography">Photography</div>
                 </div>
                 <div class="project">
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="mobileApp">
                                 <div class="card">
                                     <div class="background background1">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Claritas Etiam Processus</h3>
-                                        <h4>Photography, Nature</h4>
+                                        <p>Photography, Nature</p>
                                     </div>
                                 </div>
-
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="photography">
                                 <div class="card">
                                     <div class="background background2">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Quam Nutamus Farum</h3>
-                                        <h4>Graphic Design, Mock-Up</h4>
+                                        <p>Graphic Design, Mock-Up</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="illustration">
                                 <div class="card">
                                     <div class="background background3">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Usus Legentis Videntur</h3>
@@ -278,11 +287,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="photography">
                                 <div class="card">
                                     <div class="background background4">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Claritas Etiam Processus</h3>
@@ -291,11 +300,11 @@
                                 </div>
 
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="webDesign">
                                 <div class="card">
                                     <div class="background background5">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Quam Nutamus Farum</h3>
@@ -303,11 +312,11 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4">
+                            <div class="col-md-6 col-lg-4 cardContent" name="photography">
                                 <div class="card">
                                     <div class="background background6">
-                                        <div class="link"><img src="img/link.png" alt=""></div>
-                                        <div class="lupa"><img src="img/lupa.png" alt=""></div>
+                                        <div class="link"><i class="fas fa-search"></i></div>
+                                        <div class="lupa"><i class="fas fa-link"></i></div>
                                     </div>
                                     <div class="inform">
                                         <h3>Usus Legentis Videntur</h3>
@@ -325,16 +334,24 @@
             </div>
         </div>
         <div class="video-bar">
+
             <div class="content">
-                <div class="video-play">
-                    <img src="img/icon-play.png" alt="">
+                <div class="background">
+                    <div class="overlay" id="overlay">
+                        <div class="video-play">
+                            <img src="img/icon-play.png" alt="">
+                        </div>
+                        <div class="block">
+                            <h2>Waxom Video Presentation</h2>
+                            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui
+                                sequitur
+                                mutationem consuetudium.</p>
+
+                            <p class="time">03:26</p>
+                        </div>
+                    </div>
                 </div>
-
-                <h2>Waxom Video Presentation</h2>
-                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur
-                    mutationem consuetudium.</p>
-
-                <p class="time">03:26</p>
+                <video src="video/Person Typing Fast.mp4" muted loop id="video"></video>
             </div>
         </div>
         <div class="mobile">
@@ -418,16 +435,12 @@
                                     <div class="month">Sep.</div>
                                 </div>
                                 <div class="circle">
-                                    <img src="img/04.png" alt="">
-                                    <img src="img/02.png" alt="">
-                                    <img src="img/04.png" alt="">
-                                    <img src="img/04.png" alt="">
-                                    <img src="img/04.png" alt="">
                                 </div>
                             </div>
                             <div class="content">
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <p class="p">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                    consuetudium.</p>
                                 <p class="more">Read more</p>
                             </div>
                         </div>
@@ -442,7 +455,8 @@
                             </div>
                             <div class="content">
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <p class="p">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                    consuetudium.</p>
                                 <p class="more">Read more</p>
                             </div>
                         </div>
@@ -457,15 +471,17 @@
                             </div>
                             <div class="content">
                                 <h3>Lorem ipsum dolor sit amet</h3>
-                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <p class="p">Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                    consuetudium.Claritas est etiam processus dynamicus, qui sequitur mutationem
+                                    consuetudium.</p>
                                 <p class="more">Read more</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="control">
-                    <img src="img/left2.png" alt="">
-                    <img src="img/right2.png" alt="">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
                 </div>
 
             </div>
@@ -508,7 +524,12 @@
                         <img src="img/logos.png" alt="">
                         <h2>Waxom</h2>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+                    <p class="p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt
+                        ut
+                        laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+                        suscipit lobortis claritatem.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                        nonummy nibh euismod tincidunt
                         ut
                         laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
                         suscipit lobortis claritatem.</p>

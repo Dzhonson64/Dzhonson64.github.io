@@ -44,7 +44,11 @@ footer h3{
     display: table;
     clear: both;
 }
-
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.336);
+}
 
 /************HEADER************/
 
@@ -119,6 +123,16 @@ menu {
 menu .menu-items{
     width: 100%;
 }
+menu .menu-items .search i{
+    color: #ffffff;
+    font-size: 25px;
+    transition: all 0.56s ease;
+    cursor: pointer;
+}
+menu .menu-items .search i:hover{
+    
+    color: #736357;
+}
 menu .logo{   
     display:flex;
     align-items: center; 
@@ -149,11 +163,19 @@ menu .menu a:hover{
 header .slider {
     height: 100vh;
     color: #ffffff;
+    
 }
 header .slider .right{
     cursor: pointer;
     position: absolute;
     left: 150px;
+}
+header .slider i{
+    font-size: 65px;
+    transition: all 0.6s ease;
+}
+header .slider i:hover{
+    color:#736357;
 }
 header .slider .left{
     cursor: pointer;
@@ -164,9 +186,20 @@ header .slider .pointer {
     position: absolute;
     bottom: 25px;
 }
-header .slider .pointer .circle{
+header .slider .pointer .circle::before{
+    font-family: 'Font Awesome 5 Free';
     margin: 0 5px;
     cursor: pointer;
+    content: "\f111";
+    display: block;
+    color: #8c8e92;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    
+}
+header .slider .pointer .circle:hover::before, header .slider .pointer .active::before{
+    font-weight: 400;
+    color: #ffffff;
 }
 
 
@@ -233,6 +266,8 @@ header .slider .pointer .circle{
 }
 .content .cards .block p, .content .cards .block-active p {
     margin-top: 4px;
+    overflow: hidden;
+    transition: all 0.5s ease;
 }
 .content .cards .block-active h3 {
     padding-bottom: 30px;
@@ -244,6 +279,10 @@ header .slider .pointer .circle{
 .content .cards .block-active p {
     margin-bottom: 30px;
 }
+.content .cards p{
+    transition: all 0.5s ease;
+    height: 90px;
+}
 .content .cards .block-active::after{
     content:"";
     display: block;
@@ -251,8 +290,24 @@ header .slider .pointer .circle{
     height: 3px;
     background-color: #c7b299;
 }
+.content .cards .block i, .content .cards .block-active i{
+    font-size: 50px;
+    color: #616161;
+}
 .content .cards .cards {
     margin-bottom: 80px;
+}
+.content .cards .moreRead{
+    display: none;
+    color: #616161;;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-weight: 700;
+    border: 1px solid #616161;
+    padding: 5px 15px;
+}
+.content .cards .moreRead:hover{
+    color: #362f2d  ;
 }
 
 
@@ -434,13 +489,13 @@ header .slider .pointer .circle{
     background-image: url("../img/bg photo3.png");
 }
 .content .projects .project .card .background4{
-    background-image: url("../img/bg photo4.png");
+    background-image: url("../img/bg_photo4.png");
 }
 .content .projects .project .card .background5{
     background-image: url("../img/bg photo5.png");
 }
 .content .projects .project .card .background6{
-    background-image: url("../img/bg photo6.png");
+    background-image: url("../img/bg_photo6.png");
 }
 .content .projects .project .inform h3 {
     transition: all 0.5s ease;
@@ -469,6 +524,13 @@ header .slider .pointer .circle{
     position: absolute;
     top: 100px;
     z-index: 1;
+    color: #ffffff;
+    font-size: 25px;
+    transition: color 0.5s ease;
+    cursor: pointer;
+}
+.content .projects .project .card .link:hover, .content .projects .project .card .lupa:hover {
+    color: #998675;
 }
 .content .projects .project .margin-top {
     margin-top: 30px;
@@ -518,12 +580,12 @@ header .slider .pointer .circle{
 
 
 .content  .video-bar{
-    height: 100vh;
-    background-image: url("../img/video-photo.png");
-    background-size: cover;
+    height: 105vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    position: relative;
 }
 .content .video-bar .video-play{
     border-radius: 100%;
@@ -532,10 +594,12 @@ header .slider .pointer .circle{
     margin-bottom: 45px;
     cursor: pointer;
     transition: all 0.5s ease;
+    display: inline-block;
     
 }
 .content .video-bar .video-play:hover {
     background-color: rgba(34, 34, 34, 0.58);
+    opacity: 1;
 }
 .content  .video-bar .content{
     display: flex;
@@ -561,6 +625,36 @@ header .slider .pointer .circle{
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+}
+.content .video-bar video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content  .video-bar .background{
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    position: absolute;
+    top:0;
+    left:0;
+}
+.content  .video-bar .overlay {
+   
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content  .video-bar .block{
+    opacity: 1;
 }
 
 .content .mobile{
@@ -645,7 +739,11 @@ header .slider .pointer .circle{
 .content .posts .comment  p{
     color: #8c8c8c;
 }
-
+.content .posts .comment .p{
+    height: 65px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
 .content .posts .content {
     padding: 30px 40px;
     background-color: #fbfaf8;
@@ -657,6 +755,9 @@ header .slider .pointer .circle{
 .content .posts .content p {
     color: #8c8c8c;
     font-size: 14px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    height: 65px;
 }
 .content .posts .bar{    
     background-size: cover;
@@ -678,12 +779,29 @@ header .slider .pointer .circle{
     position: absolute;
     bottom: 10px;
 }
+.content .posts .blocks .circle .pointer{
+    display: inline-block;
+}
+.content .posts .blocks .circle .pointer::before{
+    font-family: 'Font Awesome 5 Free';
+    margin: 0 5px;
+    cursor: pointer;
+    content: "\f111";    
+    color: #8c8e92;
+    font-weight: 600;
+    transition: all 0.5s ease;
+}
+.content .posts .blocks .circle .pointer:hover::before,.content .posts .blocks .circle .pointer.active::before {
+    font-weight: 400;
+    color: #ffffff;
+}
 .content .posts .blocks .circle img{
     padding: 0 3px 0;
 }
 .content .posts .content .more {
     color: #c7b299;
     cursor: pointer;
+    display: none;
 }
 .content .posts .blocks .more::after{
     content: "";
@@ -736,12 +854,28 @@ header .slider .pointer .circle{
 }
 .content .posts .blocks:hover .more {
     color: #c7b299;
+    display: none;
 }
 
 .content .posts .control{
     display: flex;
     justify-content: center;
     margin-top: 40px;
+}
+.content .posts .control i{
+    border: 2px solid #939396;
+    color : #939396;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+    transition: all 0.6s ease;
+}
+.content .posts .control i:hover {
+    color: #c7b299;
+    border: 2px solid #c7b299;
 }
 .content .posts .control img{
     cursor: pointer;
@@ -786,10 +920,16 @@ footer p {
     color: #555555;
     font-size: 14px;
 }
+footer p.p{
+    height: 150px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
 footer .more {
     transition:  all 0.5s ease;
     color: #d1d1d1;
     cursor: pointer;
+    display: none;
 }
 footer .more::after{
     content: "";
